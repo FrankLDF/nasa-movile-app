@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 import { format, sub } from "date-fns";
 
 import api from "../../../utils/api";
 import TodaysImage from "../../molecules/todays-image";
+import LastFiveDaysImages from "../../organisms/last-five-days";
 import Header from "../../molecules/header";
 
 export default function Home() {
@@ -37,12 +38,17 @@ export default function Home() {
       }
     };
 
-    lodTodaysImage().catch(null);
+      lodTodaysImage().catch(null);
+      loadLast5DaysImage().catch(null);
   }, []);
   return (
-    <View>
+      <View>
+          <Text style={styles.texto}>By Frank 2021-0226 and</Text>
+          <Text style={styles.texto}>Enmanuel 2021-0618 and</Text>
+          <Text style={styles.texto}>Home</Text>
       <Header />
-      <TodaysImage {...todaysImage} />
+          <TodaysImage {...todaysImage} />
+          <LastFiveDaysImages />
     </View>
   );
 }
@@ -51,5 +57,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 16,
-  },
+    },
+    texto: {
+        color: '#fff',
+        textAlign: 'center',
+        fontWeight:'bold'
+    }
 });

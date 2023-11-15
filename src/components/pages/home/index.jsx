@@ -3,6 +3,7 @@ import { View, StyleSheet } from "react-native";
 import { format, sub } from "date-fns";
 
 import api from "../../../utils/api";
+import TodaysImage from "../../molecules/todays-image";
 import Header from "../../molecules/header";
 
 export default function Home() {
@@ -37,11 +38,11 @@ export default function Home() {
     };
 
     lodTodaysImage().catch(null);
-    loadLast5DaysImage().catch(null);
   }, []);
   return (
     <View>
       <Header />
+      <TodaysImage {...todaysImage} />
     </View>
   );
 }

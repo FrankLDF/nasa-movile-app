@@ -7,8 +7,7 @@ an application to view NASA photos from today and 5 previous days plus basic inf
 2. [Run the project](#Run_the_project)
 3. [Technology](#Technology)
 4. [Development Platform](#Development_Platform)
-5. [App preview](#App_preview)
-6. [Collaborators](#Collaborators)
+5. [Collaborators](#Collaborators)
 
 
 ## How_to_install
@@ -40,9 +39,7 @@ Open android studio for view the aplication and run the app view
 
 ![Static Badge](https://img.shields.io/badge/Android-80ff00?style=for-the-badge&logo=Android&logoColor=black)
 
-## App_preview
-
-
 ## Collaborators
 
+![hola](/assets/Coll.png)
 

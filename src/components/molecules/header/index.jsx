@@ -10,7 +10,7 @@ export default function Header() {
       <View>
         <Image
           style={styles.imageHeader}
-          source={require("../../../assetss/nasa-logo.png")}
+          source={require("../../../assets/nasa-logo.png")}
         />
       </View>
     </View>
